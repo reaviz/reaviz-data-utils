@@ -1,8 +1,20 @@
 {
   "name": "reaviz-data-utils",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Data Utilities for Reaviz Charts",
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "source": "./src/index.ts",
+  "browser": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
