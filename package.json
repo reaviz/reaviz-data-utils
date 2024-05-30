@@ -1,0 +1,14 @@
+{
+  "name": "reaviz-data-utils",
+  "version": "1.0.0",
+  "description": "Data Utilities for Reaviz Charts",
+  "main": "index.js",
+  "devDependencies": {
+    "tsup": "^8.0.2"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts"
+  },
+  "author": "",
+  "license": "ISC"
+}
