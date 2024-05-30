@@ -4,7 +4,8 @@
   "description": "Data Utilities for Reaviz Charts",
   "main": "index.js",
   "devDependencies": {
-    "tsup": "^8.0.2"
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
   },
   "scripts": {
     "build": "tsup src/index.ts"
