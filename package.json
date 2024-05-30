@@ -10,5 +10,11 @@
     "build": "tsup src/index.ts"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "big-integer": "^1.6.52",
+    "d3-array": "^3.2.4",
+    "moment": "^2.30.1",
+    "react": "^18.3.1"
+  }
 }
