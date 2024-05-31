@@ -19,18 +19,21 @@
     "dist"
   ],
   "devDependencies": {
+    "@types/d3-array": "^3.2.1",
+    "@types/react": "^18.3.3",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
   "scripts": {
-    "build": "tsup src/index.ts src/blocks/index.ts"
+    "build": "tsup src/index.ts src/blocks/index.ts --dts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "big-integer": "^1.6.52",
     "d3-array": "^3.2.4",
-    "date-fns": "^3.6.0"
+    "date-fns": "^3.6.0",
+    "reaviz": "^15.15.7"
   },
   "peerDependencies": {
     "react": "^18.3.1"
