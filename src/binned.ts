@@ -1,17 +1,17 @@
-import { range } from 'd3-array';
-import { generateDate, randomNumber } from './utils';
+import { range } from "d3-array";
+import { generateDate, randomNumber } from "./utils";
 
-const DIVERGING_DATA_KEY_POSITIVE = 'Opened';
-const DIVERGING_DATA_KEY_NEGATIVE = 'Closed';
+const DIVERGING_DATA_KEY_POSITIVE = "Opened";
+const DIVERGING_DATA_KEY_NEGATIVE = "Closed";
 
 export const generateBinnedData = (
   count: number,
   minVal = 0,
   maxVal = 50,
-  dataKeyToZero = ''
+  dataKeyToZero = ""
 ) =>
   range(count)
-    .map(i => ({
+    .map((i) => ({
       key: generateDate(i).toLocaleDateString(),
       data: [
         {
@@ -19,112 +19,99 @@ export const generateBinnedData = (
           data:
             dataKeyToZero === DIVERGING_DATA_KEY_NEGATIVE
               ? 0
-              : -randomNumber(minVal, maxVal)
+              : -randomNumber(minVal, maxVal),
         },
         {
           key: DIVERGING_DATA_KEY_POSITIVE,
           data:
             dataKeyToZero === DIVERGING_DATA_KEY_POSITIVE
               ? 0
-              : randomNumber(minVal, maxVal)
-        }
-      ]
+              : randomNumber(minVal, maxVal),
+        },
+      ],
     }))
     .reverse();
 
 // generateBinnedData(7);
 export const binnedDateData = [
   {
-    key: '2/25/2020',
+    key: "2/25/2020",
     data: [
       {
-        key: 'Closed',
-        data: -18
+        key: "Closed",
+        data: -35,
       },
       {
-        key: 'Opened',
-        data: 31
-      }
-    ]
+        key: "Opened",
+        data: 35,
+      },
+    ],
   },
   {
-    key: '2/26/2020',
+    key: "2/26/2020",
     data: [
       {
-        key: 'Closed',
-        data: -36
+        key: "Closed",
+        data: -10,
       },
       {
-        key: 'Opened',
-        data: 46
-      }
-    ]
+        key: "Opened",
+        data: 10,
+      },
+    ],
   },
   {
-    key: '2/27/2020',
+    key: "2/27/2020",
     data: [
       {
-        key: 'Closed',
-        data: -29
+        key: "Closed",
+        data: -29,
       },
       {
-        key: 'Opened',
-        data: 9
-      }
-    ]
+        key: "Opened",
+        data: 29,
+      },
+    ],
   },
   {
-    key: '2/28/2020',
+    key: "2/29/2020",
     data: [
       {
-        key: 'Closed',
-        data: -1
+        key: "Closed",
+        data: -10,
       },
       {
-        key: 'Opened',
-        data: 6
-      }
-    ]
+        key: "Opened",
+        data: 10,
+      },
+    ],
   },
   {
-    key: '2/29/2020',
+    key: "3/1/2020",
     data: [
       {
-        key: 'Closed',
-        data: -22
+        key: "Closed",
+        data: -34,
       },
       {
-        key: 'Opened',
-        data: 29
-      }
-    ]
+        key: "Opened",
+        data: 34,
+      },
+    ],
   },
   {
-    key: '3/1/2020',
+    key: "3/2/2020",
     data: [
       {
-        key: 'Closed',
-        data: -18
+        key: "Closed",
+        data: -29,
       },
       {
-        key: 'Opened',
-        data: 44
-      }
-    ]
+        key: "Opened",
+        data: 29,
+      },
+    ],
   },
-  {
-    key: '3/2/2020',
-    data: [
-      {
-        key: 'Closed',
-        data: -29
-      },
-      {
-        key: 'Opened',
-        data: 38
-      }
-    ]
-  }
 ];
 
 // export const binnedDatePositiveOnly = generateBinnedData(
@@ -135,54 +122,54 @@ export const binnedDateData = [
 // );
 export const binnedDatePositiveOnly = [
   {
-    key: '2/25/2020',
+    key: "2/25/2020",
     data: [
-      { key: 'Closed', data: 0 },
-      { key: 'Opened', data: 23 }
-    ]
+      { key: "Closed", data: 0 },
+      { key: "Opened", data: 23 },
+    ],
   },
   {
-    key: '2/26/2020',
+    key: "2/26/2020",
     data: [
-      { key: 'Closed', data: 0 },
-      { key: 'Opened', data: 15 }
-    ]
+      { key: "Closed", data: 0 },
+      { key: "Opened", data: 15 },
+    ],
   },
   {
-    key: '2/27/2020',
+    key: "2/27/2020",
     data: [
-      { key: 'Closed', data: 0 },
-      { key: 'Opened', data: 32 }
-    ]
+      { key: "Closed", data: 0 },
+      { key: "Opened", data: 32 },
+    ],
   },
   {
-    key: '2/28/2020',
+    key: "2/28/2020",
     data: [
-      { key: 'Closed', data: 0 },
-      { key: 'Opened', data: 42 }
-    ]
+      { key: "Closed", data: 0 },
+      { key: "Opened", data: 42 },
+    ],
   },
   {
-    key: '2/29/2020',
+    key: "2/29/2020",
     data: [
-      { key: 'Closed', data: 0 },
-      { key: 'Opened', data: 33 }
-    ]
+      { key: "Closed", data: 0 },
+      { key: "Opened", data: 33 },
+    ],
   },
   {
-    key: '3/1/2020',
+    key: "3/1/2020",
     data: [
-      { key: 'Closed', data: 0 },
-      { key: 'Opened', data: 20 }
-    ]
+      { key: "Closed", data: 0 },
+      { key: "Opened", data: 20 },
+    ],
   },
   {
-    key: '3/2/2020',
+    key: "3/2/2020",
     data: [
-      { key: 'Closed', data: 0 },
-      { key: 'Opened', data: 14 }
-    ]
-  }
+      { key: "Closed", data: 0 },
+      { key: "Opened", data: 14 },
+    ],
+  },
 ];
 
 // export const binnedDateNegativeOnly = generateBinnedData(
@@ -193,52 +180,52 @@ export const binnedDatePositiveOnly = [
 // );
 export const binnedDateNegativeOnly = [
   {
-    key: '2/25/2020',
+    key: "2/25/2020",
     data: [
-      { key: 'Closed', data: -36 },
-      { key: 'Opened', data: 0 }
-    ]
+      { key: "Closed", data: -36 },
+      { key: "Opened", data: 0 },
+    ],
   },
   {
-    key: '2/26/2020',
+    key: "2/26/2020",
     data: [
-      { key: 'Closed', data: -26 },
-      { key: 'Opened', data: 0 }
-    ]
+      { key: "Closed", data: -26 },
+      { key: "Opened", data: 0 },
+    ],
   },
   {
-    key: '2/27/2020',
+    key: "2/27/2020",
     data: [
-      { key: 'Closed', data: -7 },
-      { key: 'Opened', data: 0 }
-    ]
+      { key: "Closed", data: -7 },
+      { key: "Opened", data: 0 },
+    ],
   },
   {
-    key: '2/28/2020',
+    key: "2/28/2020",
     data: [
-      { key: 'Closed', data: -7 },
-      { key: 'Opened', data: 0 }
-    ]
+      { key: "Closed", data: -7 },
+      { key: "Opened", data: 0 },
+    ],
   },
   {
-    key: '2/29/2020',
+    key: "2/29/2020",
     data: [
-      { key: 'Closed', data: -18 },
-      { key: 'Opened', data: 0 }
-    ]
+      { key: "Closed", data: -18 },
+      { key: "Opened", data: 0 },
+    ],
   },
   {
-    key: '3/1/2020',
+    key: "3/1/2020",
     data: [
-      { key: 'Closed', data: -37 },
-      { key: 'Opened', data: 0 }
-    ]
+      { key: "Closed", data: -37 },
+      { key: "Opened", data: 0 },
+    ],
   },
   {
-    key: '3/2/2020',
+    key: "3/2/2020",
     data: [
-      { key: 'Closed', data: -34 },
-      { key: 'Opened', data: 0 }
-    ]
-  }
+      { key: "Closed", data: -34 },
+      { key: "Opened", data: 0 },
+    ],
+  },
 ];
