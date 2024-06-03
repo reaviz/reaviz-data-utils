@@ -1,6 +1,7 @@
 import bigInt from "big-integer";
 import { range } from "d3-array";
 import { generateDate, randomNumber } from "./utils";
+import { longMultiDateData } from "./largeDates";
 
 export const generateData = (count: number, minVal = 1, maxVal = 50) =>
   range(count)
@@ -514,6 +515,13 @@ export const largeDateData = [
   },
 ];
 
+export const nonZeroDateData = [
+  { key: new Date("2020-02-17T08:00:00.000Z"), data: [5, 10] },
+  { key: new Date("2020-02-21T08:00:00.000Z"), data: [8, 14] },
+  { key: new Date("2020-02-26T08:00:00.000Z"), data: [5, 6] },
+  { key: new Date("2020-02-29T08:00:00.000Z"), data: [10, 18] },
+];
+
 export const medDateData = [
   {
     id: "50",
@@ -786,10 +794,10 @@ export const smallDateData = [
 ];
 
 export const singleDateData = [
-  { id: "0", key: new Date("2020-02-17T08:00:00.000Z"), data: 10 },
-  { id: "1", key: new Date("2020-02-21T08:00:00.000Z"), data: 18 },
-  { id: "2", key: new Date("2020-02-26T08:00:00.000Z"), data: 2 },
-  { id: "3", key: new Date("2020-02-29T08:00:00.000Z"), data: 10 },
+  { id: "0", key: new Date("2020-02-17T08:00:00.000Z"), data: 18 },
+  { id: "1", key: new Date("2020-02-21T08:00:00.000Z"), data: 3 },
+  { id: "2", key: new Date("2020-02-26T08:00:00.000Z"), data: 14 },
+  { id: "3", key: new Date("2020-02-29T08:00:00.000Z"), data: 18 },
 ];
 
 export const multiDateData = [
@@ -870,13 +878,6 @@ export const multiDateData = [
   },
 ];
 
-export const nonZeroDateData = [
-  { key: new Date("2020-02-17T08:00:00.000Z"), data: [5, 10] },
-  { key: new Date("2020-02-21T08:00:00.000Z"), data: [8, 14] },
-  { key: new Date("2020-02-26T08:00:00.000Z"), data: [5, 6] },
-  { key: new Date("2020-02-29T08:00:00.000Z"), data: [10, 18] },
-];
-
 export const singleDateBigIntData = [
   {
     key: new Date("2020-02-17T08:00:00.000Z"),
@@ -895,3 +896,5 @@ export const singleDateBigIntData = [
     data: bigInt(76129235932),
   },
 ];
+
+export const mediumMultiDateData = longMultiDateData.slice(0, 8);

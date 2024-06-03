@@ -7,25 +7,6 @@ export const generateCategoryData = (count: number) =>
     data: randomNumber(0, 50),
   }));
 
-export const categoryData = [
-  {
-    key: "Phishing Attack",
-    data: 10,
-  },
-  {
-    key: "IDS",
-    data: 14,
-  },
-  {
-    key: "Malware",
-    data: 5,
-  },
-  {
-    key: "DLP",
-    data: 18,
-  },
-];
-
 export const categoryDataStackedArcs = [
   {
     key: "Third Party",
@@ -47,6 +28,87 @@ export const categoryDataStackedArcs = [
   {
     key: "IDS",
     data: 26,
+  },
+];
+
+export const categoryData = [
+  {
+    key: "DLP",
+    data: 10,
+  },
+  {
+    key: "Malware",
+    data: 30,
+  },
+  {
+    key: "IDS",
+    data: 20,
+  },
+  {
+    key: "Phishing Attack",
+    data: 40,
+  },
+];
+
+export const mediumCategoryData = [
+  {
+    key: "Phishing Attack",
+    data: 60,
+  },
+  {
+    key: "IDS",
+    data: 20,
+  },
+  {
+    key: "Malware",
+    data: 30,
+  },
+  {
+    key: "DLP",
+    data: 80,
+  },
+  {
+    key: "DDoS",
+    data: 60,
+  },
+  {
+    key: "Firewall",
+    data: 20,
+  },
+  {
+    key: "Brute Force",
+    data: 50,
+  },
+];
+
+export const labelsData = [
+  {
+    key: "Phishing Attack",
+    data: 40,
+  },
+  {
+    key: "IDS",
+    data: 30,
+  },
+  {
+    key: "Malware",
+    data: 20,
+  },
+  {
+    key: "DLP",
+    data: 20,
+  },
+  {
+    key: "DDoS",
+    data: 30,
+  },
+  {
+    key: "Firewall",
+    data: 40,
+  },
+  {
+    key: "Brute Force",
+    data: 50,
   },
 ];
 
@@ -88,7 +150,121 @@ export const nonZeroCategoryData: any = [
   },
 ];
 
-// generateCategoryData(50)
+export const largeCategoryData2 = [
+  {
+    key: "IDS0",
+    data: 9,
+  },
+  {
+    key: "IDS1",
+    data: 26,
+  },
+  {
+    key: "DLP2",
+    data: 8,
+  },
+  {
+    key: "Phishing Attack3",
+    data: 17,
+  },
+  {
+    key: "Malware4",
+    data: 28,
+  },
+  {
+    key: "Malware5",
+    data: 12,
+  },
+  {
+    key: "DLP6",
+    data: 22,
+  },
+  {
+    key: "Malware7",
+    data: 14,
+  },
+  {
+    key: "Malware8",
+    data: 1,
+  },
+  {
+    key: "IDS9",
+    data: 34,
+  },
+  {
+    key: "Phishing Attack10",
+    data: 34,
+  },
+  {
+    key: "Malware11",
+    data: 23,
+  },
+  {
+    key: "Phishing Attack12",
+    data: 48,
+  },
+  {
+    key: "Malware13",
+    data: 12,
+  },
+  {
+    key: "DLP14",
+    data: 31,
+  },
+  {
+    key: "IDS15",
+    data: 43,
+  },
+  {
+    key: "IDS16",
+    data: 32,
+  },
+  {
+    key: "IDS17",
+    data: 45,
+  },
+  {
+    key: "Malware18",
+    data: 37,
+  },
+  {
+    key: "Malware19",
+    data: 5,
+  },
+  {
+    key: "DLP20",
+    data: 2,
+  },
+  {
+    key: "Phishing Attack21",
+    data: 30,
+  },
+  {
+    key: "Malware22",
+    data: 16,
+  },
+  {
+    key: "DLP23",
+    data: 43,
+  },
+  {
+    key: "DLP24",
+    data: 9,
+  },
+  {
+    key: "Malware25",
+    data: 6,
+  },
+  {
+    key: "Malware26",
+    data: 35,
+  },
+  {
+    key: "Malware27",
+    data: 25,
+  },
+];
+
 export const largeCategoryData = [
   {
     key: "IDS0",
@@ -226,70 +402,6 @@ export const largeCategoryData = [
     key: "IDS33",
     data: 3,
   },
-  {
-    key: "Malware34",
-    data: 28,
-  },
-  {
-    key: "DLP35",
-    data: 21,
-  },
-  {
-    key: "Phishing Attack36",
-    data: 12,
-  },
-  {
-    key: "Malware37",
-    data: 26,
-  },
-  {
-    key: "IDS38",
-    data: 46,
-  },
-  {
-    key: "Phishing Attack39",
-    data: 43,
-  },
-  {
-    key: "IDS40",
-    data: 20,
-  },
-  {
-    key: "IDS41",
-    data: 7,
-  },
-  {
-    key: "IDS42",
-    data: 22,
-  },
-  {
-    key: "IDS43",
-    data: 4,
-  },
-  {
-    key: "Phishing Attack44",
-    data: 26,
-  },
-  {
-    key: "DLP45",
-    data: 23,
-  },
-  {
-    key: "IDS46",
-    data: 18,
-  },
-  {
-    key: "IDS47",
-    data: 28,
-  },
-  {
-    key: "DLP48",
-    data: 40,
-  },
-  {
-    key: "Phishing Attack49",
-    data: 26,
-  },
 ];
 
 export const multiCategory = [
@@ -377,24 +489,219 @@ export const multiCategory = [
       },
     ],
   },
+];
+
+export const multiCategoryXSmallBlock = [
   {
-    key: "Breach",
+    key: "Lateral Movement",
     data: [
       {
         key: "XML",
-        data: 5,
+        data: 60,
       },
       {
         key: "JSON",
-        data: 10,
+        data: 20,
       },
       {
         key: "HTTPS",
-        data: 15,
+        data: 40,
       },
       {
         key: "SSH",
+        data: 80,
+      },
+    ],
+  },
+  {
+    key: "Discovery",
+    data: [
+      {
+        key: "XML",
+        data: 60,
+      },
+      {
+        key: "JSON",
         data: 20,
+      },
+      {
+        key: "HTTPS",
+        data: 40,
+      },
+      {
+        key: "SSH",
+        data: 80,
+      },
+    ],
+  },
+  {
+    key: "Exploitation",
+    data: [
+      {
+        key: "XML",
+        data: 60,
+      },
+      {
+        key: "JSON",
+        data: 20,
+      },
+      {
+        key: "HTTPS",
+        data: 40,
+      },
+      {
+        key: "SSH",
+        data: 80,
+      },
+    ],
+  },
+  {
+    key: "Threat Intelligence",
+    data: [
+      {
+        key: "XML",
+        data: 60,
+      },
+      {
+        key: "JSON",
+        data: 20,
+      },
+      {
+        key: "HTTPS",
+        data: 40,
+      },
+      {
+        key: "SSH",
+        data: 80,
+      },
+    ],
+  },
+];
+
+export const multiCategorySmallBlock = [
+  {
+    key: "Lateral Movement",
+    data: [
+      {
+        key: "XML",
+        data: 60,
+      },
+      {
+        key: "JSON",
+        data: 20,
+      },
+      {
+        key: "HTTPS",
+        data: 40,
+      },
+      {
+        key: "SSH",
+        data: 80,
+      },
+    ],
+  },
+  {
+    key: "Discovery",
+    data: [
+      {
+        key: "XML",
+        data: 60,
+      },
+      {
+        key: "JSON",
+        data: 20,
+      },
+      {
+        key: "HTTPS",
+        data: 40,
+      },
+      {
+        key: "SSH",
+        data: 80,
+      },
+    ],
+  },
+  {
+    key: "Exploitation",
+    data: [
+      {
+        key: "XML",
+        data: 60,
+      },
+      {
+        key: "JSON",
+        data: 20,
+      },
+      {
+        key: "HTTPS",
+        data: 40,
+      },
+      {
+        key: "SSH",
+        data: 80,
+      },
+    ],
+  },
+  {
+    key: "Threat Intelligence",
+    data: [
+      {
+        key: "XML",
+        data: 60,
+      },
+      {
+        key: "JSON",
+        data: 20,
+      },
+      {
+        key: "HTTPS",
+        data: 40,
+      },
+      {
+        key: "SSH",
+        data: 80,
+      },
+    ],
+  },
+  {
+    key: "Network Intrusion",
+    data: [
+      {
+        key: "XML",
+        data: 60,
+      },
+      {
+        key: "JSON",
+        data: 20,
+      },
+      {
+        key: "HTTPS",
+        data: 40,
+      },
+      {
+        key: "SSH",
+        data: 80,
+      },
+    ],
+  },
+  {
+    key: "Malware Analysis",
+    data: [
+      {
+        key: "XML",
+        data: 60,
+      },
+      {
+        key: "JSON",
+        data: 20,
+      },
+      {
+        key: "HTTPS",
+        data: 40,
+      },
+      {
+        key: "SSH",
+        data: 80,
       },
     ],
   },
