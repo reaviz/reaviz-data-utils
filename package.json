@@ -1,6 +1,6 @@
 {
   "name": "reaviz-data-utils",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "Data Utilities for Reaviz Charts",
   "type": "module",
   "main": "./dist/index.js",
