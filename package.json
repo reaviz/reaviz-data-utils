@@ -10,9 +10,6 @@
   "exports": {
     ".": {
       "import": "./dist/index.js"
-    },
-    "./blocks": {
-      "import": "./dist/blocks/index.js"
     }
   },
   "files": [
@@ -25,7 +22,7 @@
     "typescript": "^5.4.5"
   },
   "scripts": {
-    "build": "tsup src/index.ts src/blocks/index.ts --dts"
+    "build": "tsup src/index.ts --dts"
   },
   "author": "",
   "license": "ISC",
