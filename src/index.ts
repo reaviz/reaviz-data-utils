@@ -16,5 +16,6 @@ export * from "./sankey";
 export * from "./signals";
 export * from "./sonar";
 export * from "./treemap";
+export * from "./types";
 export * from "./utils";
 export * as icons from "./icons";
