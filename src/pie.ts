@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ChartShallowDataShape } from "reaviz";
+import { ChartShallowDataShape } from "./types";
 import * as icons from "./icons";
 
 export interface ChartDataItem extends ChartShallowDataShape<number> {
